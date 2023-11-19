@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網頁_練習</title>
+    <!-- 樣式 -->
+    <style>
+        body * {
+            box-sizing: border-box;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 85px;
+        }
+
+
+        /* 網頁Header區塊 */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 28px 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, .8);
+        }
+
+        header nav {
+            width: 990px;
+            display: inline-flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 39px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.60);
+            font-size: 20px;
+            transition: .3s;
+        }
+
+        header nav a.active,
+        header nav a:hover {
+            color: #FBC264;
+        }
+
+        /* 主要內容區塊 */
+        main {
+            width: 990px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 112px;
+        }
+
+        main div {
+            width: 50%;
+        }
+
+        main div h1 {
+            font-size: 60px;
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        main div p {
+            font-size: 32px;
+            color: rgba(0, 0, 0, 0.30);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        main div p .blue {
+            color: #4E89F4;
+        }
+
+        main div p .red {
+            color: #F07474;
+        }
+
+        /* 社群媒體Icon區 */
+        main div ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 52px;
+            padding: 20px 0 40px 0;
+        }
+
+        main div ul li {}
+
+        main div ul li a {}
+
+        main div ul li a img {
+            width: 44px;
+            height: 44px;
+        }
+
+        /* 所有作品 */
+        main div .btn {
+            padding: 20px 40px;
+            border-radius: 10px;
+            background: #ffcc77;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* 圖片*/
+        .pic-box img {
+            width: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!-- 網頁內容 -->
+
+<body>
+    <!-- 網頁Header區塊 -->
+    <!-- 提示：使用開頭區塊(header)標籤包住[導覽列標籤]及[連結]標籤，並在與我聯絡標籤上加上class（例：active） -->
+
+    <!-- ============================================================== -->
+
+    <!-- 主要內容區塊 -->
+    <!-- 
+        提示: 使用頁面主要區塊標簽(main)包住內容區塊，並拆分左右區塊
+        名字可使用標題標籤定義姓名。
+        使用文字段落標籤來定義內容文字，有加顏色的文字可以使用span標籤，並給他定義樣式的class(例：blue、red) 
+     -->
+    <main>
+        <!-- 左邊內容區塊 -->
+        <div>
+            <!-- 文字內容區塊 -->
+            <!-- 標題 -->
+            <!-- 內容 -->
+            <!-- 內容 -->
+            <!-- 社群媒體按鈕區塊 -->
+            <ul>
+                <li>
+                    <!-- 社群連結 icon -->
+                </li>
+            </ul>
+            <!-- 所有作品的連結按鈕 -->
+            <!-- 所有作品「連結」 -->
+        </div>
+        <!-- 圖片區塊 -->
+        <div class="pic-box">
+            <!-- 提示：使用圖片標籤，並指定要使用的圖片路徑 -->
+        </div>
+
+    </main>
+
+</body>
+
+</html>
