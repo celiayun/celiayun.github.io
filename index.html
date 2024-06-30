@@ -1,188 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celia Su</title>
-    <!-- 樣式 -->
+    <title>Celia Su 的個人簡介網頁</title>
     <style>
-        body * {
-            box-sizing: border-box;
-            list-style: none;
+        /* CSS樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        body {
-            padding-top: 85px;
-        }
-
-
-        /* 網頁Header區塊 */
-        header {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 28px 0;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, .8);
-        }
-
-        header nav {
-            width: 990px;
-            display: inline-flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 39px;
-        }
-
-        header nav a {
-            text-decoration: none;
-            color: rgba(0, 0, 0, 0.60);
-            font-size: 20px;
-            transition: .3s;
-        }
-
-        header nav a.active,
-        header nav a:hover {
-            color: #FBC264;
-        }
-
-        /* 主要內容區塊 */
-        main {
-            width: 990px;
-            display: flex;
+        .container {
+            width: 80%;
             margin: auto;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding-top: 112px;
+            overflow: hidden;
+            padding: 0 20px;
         }
-
-        main div {
-            width: 50%;
+        header {
+            background: #4CAF50;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
         }
-
-        main div h1 {
-            font-size: 60px;
-            color: #000;
-            font-weight: 400;
-            margin-bottom: 24px;
+        header h1 {
+            margin: 0;
+            text-align: center;
+            padding-bottom: 10px;
         }
-
-        main div p {
-            font-size: 32px;
-            color: rgba(0, 0, 0, 0.30);
-            font-weight: 400;
-            margin-bottom: 24px;
+        nav {
+            background: #333;
+            color: #ffffff;
+            padding: 10px 0;
         }
-
-        main div p .blue {
-            color: #4E89F4;
+        nav ul {
+            padding: 0;
+            list-style: none;
         }
-
-        main div p .red {
-            color: #F07474;
+        nav li {
+            display: inline;
+            padding: 0 20px;
         }
-
-        /* 社群媒體Icon區 */
-        main div ul {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 52px;
-            padding: 20px 0 40px 0;
-        }
-
-        main div ul li {}
-
-        main div ul li a {}
-
-        main div ul li a img {
-            width: 44px;
-            height: 44px;
-        }
-
-        /* 所有作品 */
-        main div .btn {
-            padding: 20px 40px;
-            border-radius: 10px;
-            background: #ffcc77;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 700;
+        nav a {
+            color: #ffffff;
             text-decoration: none;
+            font-size: 18px;
         }
-
-        /* 圖片*/
-        .pic-box img {
-            width: auto;
-            max-width: 100%;
-            margin-top: -100px;
+        section {
+            padding: 20px 0;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .photo-gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header h1, nav li {
+                text-align: center;
+                display: block;
+                padding: 5px 0;
+            }
+            .photo-gallery img {
+                width: 100%;
+            }
         }
     </style>
 </head>
-<!-- 網頁內容 -->
-
 <body>
-    <!-- 網頁Header區塊 -->
-    <!-- 提示：使用開頭區塊(header)標籤包住[導覽列標籤]及[連結]標籤，並在與我聯絡標籤上加上class（例：active） -->
     <header>
-        <nav>
-            <a href="https://celiasu.org/" target="_blank">我的作品</a>
-            <a href="https://celiasu.org/contact" target="_blank">關於我</a>
-            <a class="active" href="https://lin.ee/p9V9zx9" target="_blank">與我聯絡</a>                   
-        </nav>
+        <div class="container">
+            <h1>Celia Su 的個人簡介網頁</h1>
+        </div>
     </header>
 
-    <!-- ============================================================== -->
-
-    <!-- 主要內容區塊 -->
-    <!-- 
-        提示: 使用頁面主要區塊標簽(main)包住內容區塊，並拆分左右區塊
-        名字可使用標題標籤定義姓名。
-        使用文字段落標籤來定義內容文字，有加顏色的文字可以使用span標籤，並給他定義樣式的class(例：blue、red) 
-     -->
-    <main>
-        <!-- 左邊內容區塊 -->
-        <div>
-            <!-- 文字內容區塊 -->
-            <!-- 標題 -->
-            <h1>蘇素雲 Celia Su</h1>
-            <p>超簡單<span class="blue">用最快的工具</span></p>
-            <p>超靈活<span class="red">完成最佳的作品</span></p>    
-            <!-- 內容 -->
-            <!-- 內容 -->
-            <!-- 社群媒體按鈕區塊 -->
+    <nav>
+        <div class="container">
             <ul>
-                <li>
-                    <a href="https://www.facebook.com/celiasu82" target="_blank">
-                        <img src="./image/devicon_facebook.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@CeliaSu" target="_blank">
-                        <img src="./image/openmoji_youtube.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/celia/" target="_blank">
-                        <img src="./image/Group.svg" alt="">
-                    </a>
-                </li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#social">社交媒體</a></li>
+                <li><a href="#photos">個人照片</a></li>
+                <li><a href="#activities">活動紀錄</a></li>
             </ul>
-            <!-- 所有作品的連結按鈕 -->
-            <a href="https://celiasu.org/sitemap" target="_blank" class="btn">所有作品</a>
         </div>
-        <!-- 圖片區塊 -->
-        <div class="pic-box">
-            <img src="./image/Once upon a time, there was a magical forest 1.png" alt="">
-        </div>
+    </nav>
 
-    </main>
+    <div class="container">
+        <section id="about">
+            <h2>關於我</h2>
+            <p>我是Celia Su，一位專業的數位行銷顧問。我專門教授如何使用Canva進行行銷設計，以及運用Midjourney等AI生圖工具和Microsoft Designer來優化數位工作內容及成果。目前居住在高雄，致力於幫助企業和個人提升他們的數位行銷策略。</p>
+        </section>
 
+        <section id="social">
+            <h2>社交媒體連結</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/havefuninenglish" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/celiasulife" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/@havefuninenglish" target="_blank">YouTube</a>
+            </div>
+        </section>
+
+        <section id="photos">
+            <h2>個人照片</h2>
+            <div class="photo-gallery">
+                <img src="photo1.jpg" alt="Celia Su 個人照片1">
+                <img src="photo2.jpg" alt="Celia Su 個人照片2">
+                <img src="photo3.jpg" alt="Celia Su 個人照片3">
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>活動紀錄</h2>
+            <ul id="activity-list">
+                <!-- 活動將通過JavaScript動態添加 -->
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Celia Su. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript代碼
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("頁面已加載，腳本運行中。");
+
+            // 動態添加活動紀錄
+            const activities = [
+                "2024年3月 - 舉辦 Canva 線上工作坊",
+                "2024年2月 - 參加高雄數位行銷論壇",
+                "2024年1月 - 發布新的 YouTube 教學系列：AI 生圖技巧",
+                "2023年12月 - 舉辦年終數位行銷策略分享會"
+            ];
+
+            const activityList = document.getElementById('activity-list');
+            activities.forEach(activity => {
+                const li = document.createElement('li');
+                li.textContent = activity;
+                activityList.appendChild(li);
+            });
+
+            // 添加平滑滾動效果
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // 添加文件下載功能
+            const downloadButton = document.createElement('button');
+            downloadButton.textContent = '下載我的簡歷';
+            downloadButton.onclick = function() {
+                // 這裡應該是實際的下載邏輯
+                alert('簡歷下載功能即將推出！');
+            };
+            document.querySelector('#about').appendChild(downloadButton);
+        });
+    </script>
 </body>
-
 </html>
